@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background: url("background.jpeg");
-
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 .box{
@@ -51,4 +53,16 @@ ul{
 }
 .box li a:hover{
     color: #b9b9b9;
+}
+@-ms-viewport {
+    width: device-width;
+    height: device-height;
+}
+
+@media screen and (max-width: 480px) {
+
+    html, body {
+        min-width: 320px;
+    }
+
 }
